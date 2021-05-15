@@ -1,6 +1,6 @@
 # Laravel 8 RocketMQ 组件
 
-fork on freyo/laravel-queue-rocketmq
+> fork on [freyo/laravel-queue-rocketmq](https://github.com/freyo/laravel-queue-rocketmq)
 
 thanks freyo！！！
 
