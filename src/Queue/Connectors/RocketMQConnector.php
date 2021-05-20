@@ -3,7 +3,7 @@
 namespace Neilyoz\LaravelQueueRocketMQ\Queue\Connectors;
 
 use Illuminate\Queue\Connectors\ConnectorInterface;
-use MQ\MQCLient;
+use MQ\MQClient;
 use Neilyoz\LaravelQueueRocketMQ\Queue\RocketMQQueue;
 use ReflectionException;
 
