@@ -9,7 +9,7 @@ use Illuminate\Contracts\Queue\Queue as QueueContract;
 use Illuminate\Support\Arr;
 use MQ\Exception\MessageNotExistException;
 use MQ\Model\TopicMessage;
-use MQ\MQCLient;
+use MQ\MQClient;
 use MQ\MQConsumer;
 use MQ\MQProducer;
 use Neilyoz\LaravelQueueRocketMQ\Queue\Jobs\RocketMQJob;
@@ -35,11 +35,11 @@ class RocketMQQueue extends Queue implements QueueContract
 
     /**
      * RocketMQQueue constructor.
-     * @param MQCLient $client
+     * @param MQClient $client
      * @param array $config
      * @throws ReflectionException
      */
-    public function __construct(MQCLient $client, array $config)
+    public function __construct(MQClient $client, array $config)
     {
         $this->client = $client;
         $this->config = $config;
