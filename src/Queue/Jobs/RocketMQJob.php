@@ -88,9 +88,9 @@ class RocketMQJob extends Job implements JobContract
     /**
      * Get the decoded body of the job.
      *
-     * @return array|null
+     * @return mixed
      */
-    public function payload(): ?array
+    public function payload()
     {
         if ($this->connection->isPlain()) {
             $job = $this->connection->getPlainJob();
